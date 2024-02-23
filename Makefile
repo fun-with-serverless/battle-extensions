@@ -8,11 +8,13 @@ build-and-deploy-llrt:
 build-and-deploy-node:
 	@echo "Building and deploying NodeJS"
 	cd node && \
+	cd node-extension && \
 	npm install && \
 	npm run build && \
-	mkdir -p bundle/node-extensions && \
+	cd .. && \
+	mkdir -p bundle/node-extension && \
 	cp -r extensions bundle && \
-	cp dist/index.js bundle/node-extensions && \
+	cp node-extension/dist/index.js bundle/node-extension && \
 	cd bundle && \
 	zip -r extension.zip . && \
 	aws lambda publish-layer-version --layer-name "node-extension" --zip-file  "fileb://extension.zip" --compatible-runtimes nodejs --output json --no-cli-pager && \

@@ -6,4 +6,4 @@ OWN_FILENAME="$(basename $0)"
 LAMBDA_EXTENSION_NAME="$OWN_FILENAME" # (external) extension name has to match the filename
 
 echo "${LAMBDA_EXTENSION_NAME}  launching NodeJS Extension"
-node "/opt/${LAMBDA_EXTENSION_NAME}/indexMin.js"
+node "/opt/${LAMBDA_EXTENSION_NAME}/index.js"
