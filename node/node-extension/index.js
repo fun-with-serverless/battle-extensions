@@ -1,4 +1,5 @@
-const { register, next } = require("./extensions-api");
+console.info("Extension code loaded");
+const { register, next } = require("./extensions-api.js");
 const { SQSClient, SendMessageCommand } = require("@aws-sdk/client-sqs");
 const http = require("http");
 

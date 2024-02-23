@@ -1,0 +1,17 @@
+{
+  "name": "node-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.js --bundle --minify --platform=node --target=node20 --outdir=dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.521.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.1"
+  }
+}

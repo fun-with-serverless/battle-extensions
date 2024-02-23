@@ -1,4 +1,3 @@
-const fetch = require("node-fetch");
 const { basename } = require("path");
 
 const baseUrl = `http://${process.env.AWS_LAMBDA_RUNTIME_API}/2020-01-01/extension`;

@@ -17,6 +17,10 @@ lint = true
 capabilities = "CAPABILITY_IAM"
 confirm_changeset = false
 resolve_s3 = true
+s3_prefix = "battle-extensions"
+region = "eu-central-1"
+parameter_overrides = "LLRTLayerArn=\"arn:aws:lambda:eu-central-1:381492205037:layer:llrt-extension:54\" NodeLayerArn=\"arn:aws:lambda:eu-central-1:381492205037:layer:node-extension:1\""
+image_repositories = []
 
 [default.package.parameters]
 resolve_s3 = true
