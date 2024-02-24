@@ -12,5 +12,6 @@
         "source=projectname-bashhistory,target=/commandhistory,type=volume",
         "source=${localEnv:HOME}/.aws,target=/home/node/.aws,type=bind,consistency=cached",
         "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind"
-    ]
+    ],
+    "postCreateCommand": "curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash && cargo binstall cargo-lambda --no-confirm"
 }

@@ -21,6 +21,17 @@ build-and-deploy-node:
 	cd .. && \
 	rm -rf bundle
 
+build-and-deploy-rust:
+	@echo "Building and deploying Rust"
+	cargo lambda build --manifest-path rust/Cargo.toml --extension --release --arm64 && \
+	cargo lambda deploy --manifest-path rust/Cargo.toml --extension
+
+configure-app:
+	@echo "Configuring SLS application"
+	cd battle-extensions-app && \
+	sam build && \
+	sam deploy --guided
+
 deploy-app:
 	@echo "Building and deploying SLS application"
 	cd battle-extensions-app && \
