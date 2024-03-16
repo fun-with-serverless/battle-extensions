@@ -5,7 +5,8 @@
     "features": {
         "ghcr.io/devcontainers/features/aws-cli:1": {},
         "ghcr.io/devcontainers/features/rust:1": {},
-        "ghcr.io/audacioustux/devcontainers/aws-sam-cli:1": {}
+        "ghcr.io/audacioustux/devcontainers/aws-sam-cli:1": {},
+        "ghcr.io/devcontainers/features/python:1": {"version": "3.11"}
 
     },
     "mounts": [

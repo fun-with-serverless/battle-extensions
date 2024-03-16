@@ -161,7 +161,7 @@ async function sendToSQS() {
     });
     res.ok();
   });
-  server.listen(3000, () => {});
+  server.listen(3001, () => {});
 
   logMessage("register");
   try {
