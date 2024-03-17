@@ -8,7 +8,6 @@ For comprehensive details, please see the full blog post.
 
 ## Table of Contents
 - [Installation](#installation)
-- [Usage](#usage)
 - [Structure](#structure)
 - [Contributing](#contributing)
 - [License](#license)
