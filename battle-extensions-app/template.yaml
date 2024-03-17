@@ -67,3 +67,14 @@ Resources:
 
   AnalyticsSQS:
     Type: AWS::SQS::Queue
+
+Outputs:
+  NonExtensionFunction:
+    Description: "Non-extension function ARN"
+    Value: !GetAtt NonExtensionFunction.Arn
+  TestLLRTExtensionFunction:
+    Description: "LLRT extension function ARN"
+    Value: !GetAtt TestLLRTExtensionFunction.Arn
+  TestRustExtensionFunction:
+    Description: "Rust extension function ARN"
+    Value: !GetAtt TestRustExtensionFunction.Arn
