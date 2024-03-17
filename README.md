@@ -9,8 +9,6 @@ For comprehensive details, please see the full blog post.
 ## Table of Contents
 - [Installation](#installation)
 - [Structure](#structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 This repository is equipped with a `.devcontainer` configuration file for installing necessary dependencies. If you choose not to utilize `.devcontainer`, ensure the following are installed on your system:
