@@ -3,8 +3,7 @@
 ## Description
 "Battle of the Extensions" delves into the capabilities of Low Latency Runtime (LLRT) in optimizing AWS Lambda functions and extensions, with a focus on scenarios that demand minimal cold start times and maximized performance efficiency. This project sets LLRT against conventional runtimes, using Rust as a comparative benchmark, to showcase the advantages and performance gains achievable in serverless computing frameworks.
 
-For comprehensive details, please see the full blog post.
-[link]
+For comprehensive details, please see the [full blog post](https://medium.com/meliopayments/battle-of-the-extensions-772894421b0a).
 
 ## Table of Contents
 - [Installation](#installation)
